@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitney-Graustein</title>
+    <style>
+        /* changing box sizing etc */
+        *, *::before, *::after { box-sizing: border-box; }
+        html, body { margin: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        /* header settings */
+        header {
+            background-color: lightblue;
+            padding: 15px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        iframe {
+            width: min(100%, 1100px);
+            height: 90vh;
+            border: 0; /* removes borders */
+        }
+
+        /* link style*/
+        a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:focus-visible { outline: 2px dashed #333; outline-offset: 3px; } /* accessibility-ish */
+    </style>
+</head>
+<body>
+
+    <!-- little top bar w/ back link -->
+    <header>
+        <a href="index.html">← Back to Main Page</a>
+    </header>
+
+    <!-- main content area,  (the pdf in an iframe) -->
+    <main>
+        <iframe src="____" title="Project 3 PDF"></iframe>
+    </main>
+
+</body>
+</html>
